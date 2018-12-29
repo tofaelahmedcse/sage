@@ -65,7 +65,7 @@
       <?php endforeach; ?>
     </ul>
     <a href<?php echo $property_item['button_one_link'];?> data-reveal-id="modal-appt" class="cta"><span class="show-for-large-up"><?php echo $property_item['button_one_text'];?></span><span class="hide-for-large-up">Inquire</span></a><br/>
-    <a href="<?php echo $property_item['button_two_link'];?>" class="smore" title="Available Units at Lofts on 9"><?php echo $property_item['button_two_text'];?></a>
+    <a href="<?php echo site_url(); ?>/available" class="smore" title="Available Units at Lofts on 9"><?php echo $property_item['button_two_text'];?></a>
     </section>
     </li>
 
@@ -78,7 +78,7 @@
   <aside class="sideright" style="background: url(<?php the_field('penthouses_bottom_background_image');?>) center center no-repeat;" data-equalizer-watch></aside>
   <aside class="sideleft" data-equalizer-watch><span class="logo"><img src="<?php the_field('penthouses_bottom_logo_image');?>" width="160"/></span>
     <h3 style="margin: 3.5rem 0 2rem;"><span><?php the_field('penthouses_bottom_content');?></span><span class="ph"><?php the_field('penthouses_bottom_content');?></span></h3>
-    <a href="<?php the_field('penthouses_bottom_button_one_link');?>" class="cta" title="Click here to contact us."><?php the_field('penthouses_bottom_button_one_text');?></a><a href="<?php the_field('penthouses_bottom_button_two_link');?>" class="cta app" title="Click here to download application form." target="_blank"><?php the_field('penthouses_bottom_button_two_text');?></a>
+    <a href="<?php echo site_url(); ?>/contact" class="cta" title="Click here to contact us."><?php the_field('penthouses_bottom_button_one_text');?></a><a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/lo9-app.pdf" class="cta app" title="Click here to download application form." target="_blank"><?php the_field('penthouses_bottom_button_two_text');?></a>
   </aside>
 </div>
 </aside>

@@ -37,7 +37,7 @@
 
 <?php endforeach; ?>
 
-<p><a class="cta" title="Contact Lofts on 9" href="contact.html">Contact us today!</a></p>
+<p><a class="cta" title="Contact Lofts on 9" href="<?php echo site_url(); ?>/contact">Contact us today!</a></p>
 </aside>
   <?php 
    $images_sections =get_field('images_section');
@@ -55,7 +55,7 @@
   <aside class="sideright" style="background: url(<?php the_field('penthouses_bottom_background_image');?>) center center no-repeat;" data-equalizer-watch></aside>
   <aside class="sideleft" data-equalizer-watch><span class="logo"><img src="<?php the_field('penthouses_bottom_logo_image');?>" width="160"/></span>
     <h3 style="margin: 3.5rem 0 2rem;"><span><?php the_field('penthouses_bottom_content');?></span><span class="ph"><?php the_field('penthouses_bottom_content');?></span></h3>
-    <a href="<?php the_field('penthouses_bottom_button_one_link');?>" class="cta" title="Click here to contact us."><?php the_field('penthouses_bottom_button_one_text');?></a><a href="<?php the_field('penthouses_bottom_button_two_link');?>" class="cta app" title="Click here to download application form." target="_blank"><?php the_field('penthouses_bottom_button_two_text');?></a>
+    <a href="<?php echo site_url(); ?>/contact" class="cta" title="Click here to contact us."><?php the_field('penthouses_bottom_button_one_text');?></a><a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/lo9-app.pdf" class="cta app" title="Click here to download application form." target="_blank"><?php the_field('penthouses_bottom_button_two_text');?></a>
   </aside>
 </div>
 </aside>
