@@ -12,7 +12,9 @@
             {!! wp_nav_menu(['theme_location' => 'overlay_menu', 'menu_id' => 'menu-main-menu', 'container' => '']) !!}
            @endif 
        </nav>
-       <a href="{{ home_url('/') }}" title="Back to Home" id="home"><img src="<?php echo get_template_directory_uri();?>/assets/images/logo-loftson9.png"/></a>
+       <a href="{{ home_url('/') }}" title="Back to Home" id="home">
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-loftson9.png"/>
+       </a>
     </section>
  </div>
  <!--<div id="wrapper-banner">-->
@@ -20,9 +22,9 @@
     <button class="toggle-sfx active"></button>
     <div id="banner1" class="banner">
        <video loop autoplay id="bgvid" class="video-js" preload="auto">
-          <source src="<?php the_field('video_mp4'); ?>" type="video/mp4">
-          <source src="<?php the_field('video_webm'); ?>" type="video/webm">
-          <source src="<?php the_field('video_ogg'); ?>" type="video/ogg">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/video/lofts_9.mp4" type="video/mp4">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/video/lofts_9.webm" type="video/webm">
+          <source src="<?php echo get_template_directory_uri(); ?>/assets/video/lofts_9.ogv" type="video/ogg">
        </video>
        <span class="gradient"></span>
        <span class="logo-bg"></span>
